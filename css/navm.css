@@ -1,0 +1,60 @@
+.nav {
+    display: flex;
+    background: #8ea8fd;
+    overflow: visible;
+    z-index: 9999;
+}
+
+.nav * {
+  font: 500 20px 'Verdana', sans-serif;
+  text-transform: uppercase;
+  overflow: visible;
+    z-index: 9999;
+
+}
+
+.nav__link {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: #8ea8fd;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.2s;
+    overflow: visible;
+    z-index: 9999;
+
+}
+
+.nav__link:hover {
+  background-color: rgb(159, 166, 228);
+  overflow: visible;
+  z-index: 9;
+
+}
+
+.nav__link-group {
+  position: absolute;
+  top: 100%;
+  left:0;
+  min-width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateZ(-10px);
+  overflow: visible;
+  z-index: 9;
+}
+
+.nav__link:hover .nav__link-group {
+  opacity: 1;
+  visibility: visible;
+  transform: translateZ(0);
+  transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+
+
+}

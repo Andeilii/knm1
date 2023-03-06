@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title></title>
+        <link rel="stylesheet" type="text/css" href="css/mainmenu.css?version=61"/>
+    <style>
+      .container {
+          width: 100vw;
+          height: 100vh;
+
+          font-family: 'Quicksand', sans-serif;
+          font-weight: bold;
+          font-size: 20px;
+
+          display: grid;
+
+          grid-template-columns: repeat(8, 1fr);
+          grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+
+          gap: 30px;
+
+
+          box-sizing: border-box;
+      }
+
+      .container div{
+
+          border: 0px solid #000000;
+          border-color: white;
+
+      }
+
+      .header {
+
+          grid-column-start: 1;
+          grid-column-end: 8;
+
+      }
+
+  
+
+      .content-large2 {
+
+          grid-row-start: 2;
+          grid-row-end: span 5;
+          grid-column-start: 3;
+          grid-column-end: 5;
+
+      }
+
+      .content-large3 {
+
+          grid-row-start: 2;
+          grid-row-end: span 5;
+          grid-column-start: 5;
+          grid-column-end: 7;
+
+      }
+
+
+
+      .footer {
+          grid-column: 1 / span 9;
+          grid-row-start: 9;
+          grid-row-end: 9;
+
+
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div>
+          <div class="container">
+            <div class="header">
+              </div>
+             
+             <div class="content-large2">
+               <a href="wide.php"><img src="pic/pozad_menu2.jpg" alt="Avatar" class="image"></a>
+               <div class="overlay">
+              <div class="text"><h1>Rozšírené vyhľadávanie</h1><a href="wide.php"><p>
+              Ponúka full-textové vyhľadávanie všetkých údajov, ktoré sú dostupné zo spracovaných prameňov. Klientske rozhranie ponúka možnosť údaje prezerať a ukladať v rámci súkromého účtu, ktorý si môže užívateľ vytvoriť. 
+            
+              </p></div>
+              </a></div>
+             </div>
+             <div class="content-large3">
+               <a href="mainmap.html"><img src="pic/mapa.png" alt="Avatar" class="image"></a>
+               <div class="overlay">
+              <div class="text"><h1>Mapové<br>vyhľadávanie</h1><a href="index.html"><p>
+              Ponúka možnosť prezerať dobové mapy zobrazujúce Kysucké Nové Mesto. Zároveň podáva možnosť interaktívne pracovať s rôznymi vrstvami, ktoré zachytávajú údaje z dobových prameňov.   
+               </p></div>
+              </a></div>
+             </div>
+
+
+             <div class="footer"><p1>©2023 Andrej Lisko</p1>
+             </div>
+</div>
+</div>
+
+
+
+
+
+
+  </body>
+  </html>

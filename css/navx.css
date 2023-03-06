@@ -1,0 +1,56 @@
+.nav {
+    display: flex;
+    background: #70380f;
+}
+
+.nav * {
+  font: 500 20px 'Verdana', sans-serif;
+  text-transform: uppercase;
+
+}
+
+.nav__link {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    border-color: #70380f;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: #70380f;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.2s;
+}
+
+.nav__link:hover {
+  background-color: #cc8800;
+
+}
+
+#navback
+
+{
+max-width: 50px;
+
+}
+.nav__link-group {
+  position: absolute;
+  top: 100%;
+  left:0;
+  min-width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+}
+
+.nav__link:hover .nav__link-group {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+
+
+}

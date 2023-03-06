@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/navm.css?version=23"/>
+    <link rel="stylesheet" type="text/css" href="css/map.css"/>
+    <style>
+    body{
+
+
+
+      height:600px;
+      width: 100%;
+      width: fixed 1100px;
+      margin: 0;
+      box-sizing: border-box;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin:auto;
+      padding:0;
+        background-color: rgb(76, 82, 175);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+
+    }
+      .container {
+
+          font-family: 'Quicksand', sans-serif;
+          font-weight: bold;
+          font-size: 20px;
+
+          display: grid;
+
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: 100px 1fr 1fr 1fr 100px;
+
+          gap: 10px;
+
+          padding: 10px;
+          max-height: 850px;
+         
+      }
+
+    
+
+      .header {
+
+          grid-column-start: 1;
+          grid-column-end: 5;
+          text-align: center;
+
+      }
+
+      .content-large {
+
+        grid-row-start: 2;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        overflow: scroll;
+        overflow-x: hidden;
+        
+
+      }
+      
+      .content-small1 {
+        grid-row-start: 2;
+        grid-row-end: 5;
+      border-right: 2px solid #7e9cfc;
+
+
+    }
+      .content-large:hover p2 {
+        opacity: 1;
+
+      }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8ea8fd;
+  border-radius: 10px;
+}
+
+      
+
+     
+
+      .footer{
+          grid-column: 1 / span 4;
+
+          font-size: 14px;
+          text-align:center;
+        }
+
+
+      p1{
+          font-family: 'Verdana', sans-serif;
+          color: rgb(151, 183, 243);
+          opacity: 1;
+
+
+
+          }
+      p2{
+          font-family: 'Verdana', sans-serif;
+          color: rgb(255, 255, 255);
+          opacity: 1;
+
+
+
+          }
+
+          p3{
+          font-family: 'Verdana', sans-serif;
+          color: white;
+          opacity: 1;
+
+
+
+          }   
+
+          span{
+              align-content: center;
+              text-align:center;
+              color: #ffffff;
+              opacity: 1;
+              font-size: 40px;
+              font-family: 'Verdana', sans-serif;
+              text-transform: uppercase;
+
+
+              }
+
+              span b{
+                  align-content: center;
+                  text-align:center;
+                  color: white;
+                  opacity: 1;
+                  font-size: 30px;
+                  font-family: 'Verdana', sans-serif;
+                  text-transform: uppercase;
+
+
+                  }
+
+              h4{
+
+                  color: #dde5ff;
+                  opacity: 1;
+                  font-size: 20px;
+                  font-family: 'Verdana', sans-serif;
+                  text-transform: uppercase;
+
+
+                      }
+            span a{
+                  padding-right: 15px;
+                  bottom: 0;
+                  color: white;
+                  opacity: 1;
+                  font-size: 10px;
+                  font-family: 'Verdana', sans-serif;
+                  text-transform: uppercase;
+
+
+                      }
+
+    </style>
+  </head>
+  <body ontouchstart>
+    <nav class="nav">
+      <form>
+       <input type="button" class="nav__link" value="Späť" onclick="history.back()">
+      </form>
+      <a href="index.html" class="nav__link">Hlavné menu</a>
+      <div class="nav__link">
+          Ďalšie vyhľadávanie
+          <div class="nav__link-group">
+            <a href="wide.php" class="nav__link">Rozšírené</a>
+            <a href="mainmap.html" class="nav__link">Mapové</a>
+            </div>
+          </div>
+        </nav>
+      
+           <div class="container">
+            <div class="header">
+            <span><b></b>
+              DOM Č.221</span>
+             <span style="float:right"><a></a></span></div>
+
+             <div class="content-large">
+                <h4>Vlastníci</h4>
+                <p3>I.</p3> 
+             <br>
+             <br>
+             <p1>Kupná zmluva: </p1><p2>24. decembra 1867 (evidované 10. júna 1869)</p2>
+             <br>
+             <br>
+             <p1>Časť majetku z majetkovej podstaty: </p1><p2>1-3.
+        
+             </p2>
+             <br>
+             <br>
+             <p1>Hodnota majetku: </p1><p2>160 florénov
+             </p2>
+             <br>
+             <br>
+             <p1>Číslo zmluvy: </p1><p2>2252</p2>
+             <br>
+             <br>
+             <p1>Vlastník: </p1><p2>Ján Hrachovec (Hrahovecz János) a manželka Ružena rodená Beláček (Belacsek Rosi)
+            </p2>
+            <br>
+            <br>
+            <br>
+            <p3>II.</p3> 
+             <br>
+             <br>
+             <p1>Kupná zmluva: </p1><p2>4. apríla 1875 (evidované 5. mája 1876)</p2>
+             <br>
+             <br>
+             <p1>Časť majetku z majetkovej podstaty: </p1><p2>1.</p2>
+             <br>
+             <br>
+             <p1>Hodnota majetku: </p1><p2>360 florénov
+             </p2>
+             <br>
+             <br>
+             <p1>Číslo zmluvy: </p1><p2>2952</p2>
+             <br>
+             <br>
+             <p1>Vlastník: </p1><p2>Ján Harvančík (Harvancsik János) a manželka Veronika rodená Chutko (Chutko Veron)
+            </p2>
+            <br>
+            <br>
+            <br>
+            <p3>III.</p3> 
+             <br>
+             <br>
+             <p1>Kupná zmluva: </p1><p2>2. júna 1902 (evidované 18. júna 1908)</p2>
+             <br>
+             <br>
+             <p1>Časť majetku z majetkovej podstaty: </p1><p2>1.</p2>
+             <br>
+             <br>
+             <p1>Číslo zmluvy: </p1><p2>3945</p2>
+             <br>
+             <br>
+             <p1>Vlastník: </p1><p2>Ján Harvančík mladší (Harvancsik János ifj.) a manželka Mária rodená Brežná ( Brezsny Mária) po predošlých Ján Harvančík (Harvancsik János) a manželka Terézia rodená Chutko (Chutko Teréz)
+            </p2>
+            <br>
+            <br>
+            <br>
+            <p3>DODATOK - PREVOD ĎALŠIEHO MAJETKU NA VLASTNÍKOV</p3> 
+             <br>
+             <br>
+             <p1>Zmluva: </p1><p2>evidované 10. mája 1904</p2>
+             <br>
+             <br>
+             <p1>Časť majetku z majetkovej podstaty: </p1><p2>2-3.</p2>
+             <br>
+             <br>
+             <p1>Číslo zmluvy: </p1><p2>3804</p2>
+             <br>
+             <br>
+             <p1>Vlastník: </p1><p2>Ján Harvančík mladší (Harvancsik János ifj.) a manželka Mária rodená Brežná ( Brezsny Mária)
+            </p2>
+            <br>
+            <br>
+            <br>
+            <p3>IV.</p3> 
+             <br>
+             <br>
+             <p1>Kupná zmluva: </p1><p2>12. mája 1913 (evidované 17. mája 1913)</p2>
+             <br>
+             <br>
+             <p1>Časť majetku z majetkovej podstaty: </p1><p2>1-3.
+             </p2>
+             <br>
+             <br>
+             <p1>Hodnota majetku: </p1><p2>2600 korún</p2>
+             <br>
+             <br>
+             <p1>Číslo zmluvy: </p1><p2>4246</p2>
+             <br>
+             <br>
+             <p1>Vlastník: </p1><p2>Ján Sovík mladší (Szovik János ifj.) a manželka Mária rodená Harvančík (Harvancsik Mária)
+            </p2>
+             </div>
+
+
+             
+             <div class="content-small1">
+             <h4>Majetková podstata</h4>
+             <br>
+             <p1>1. </p1><p2>Domkárske sedenie s domom a záhradou</p2>
+             <br>
+             <br>
+             <p1>Rozmer: </p1><p2>177 négyszögöl (636,6 m2)</p2>
+             <br>
+             <br>
+             <p1>Ďalšie majetky</p1><p2><br><br>+ 1/8 spoločného lesa pozemku č. 607 <br><br> <p1>2.</p1> les 251/157210 <br><br> <p1>3. </p1>les 190/162080
+             </p2>
+             
+            
+             </div>
+             
+           
+             
+            
+             <div class="footer">
+             
+             <br>
+             <br>
+             <br>
+             <span><a>© 2023 Andrej Lisko</a></span>
+             </div>
+
+
+
+
+      </div>
+
+
+  </body>
+  </html>

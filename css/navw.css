@@ -1,0 +1,52 @@
+.nav {
+    display: flex;
+    background: #000000;
+    z-index: 10;
+}
+
+.nav * {
+  font: 500 20px 'Verdana', sans-serif;
+  text-transform: uppercase;
+  max-width: 250px;
+}
+
+.nav__link {
+  
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: #000000;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.2s;
+
+}
+
+.nav__link:hover {
+  background-color: gold;
+
+}
+
+.nav__link-group {
+  position: absolute;
+  top: 100%;
+  right:0;
+  min-width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+}
+
+.nav__link:hover .nav__link-group {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+
+
+}
